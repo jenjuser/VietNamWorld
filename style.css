@@ -102,6 +102,11 @@ body {
     margin-left: 0;
 }
 
+.section-title.text-center h2{ 
+    text-align: center; 
+    margin-left: 0;
+}
+
 .section-title h2 {
     display: block;
     width: 100%;
@@ -144,6 +149,9 @@ body {
     padding: 12px 35px; border-radius: 30px; border: none; text-transform: none; font-size: 16px;
     transition: all 0.3s ease; display: inline-block; cursor: pointer;
 }
+
+
+
 .vnw-btn:hover { background-color: #af231c; color: #fff; }
 .vnw-btn.outline { background-color: transparent; border: 2px solid #af231c; color: #af231c; }
 .vnw-btn.outline:hover { background-color: #af231c; color: #fff; }
@@ -151,6 +159,7 @@ body {
 /* Banner Page chung */
 .page-header-banner {
     background-image: url('img/top_bg.jpg');
+    flex-direction: column;
     background-size: cover; background-position: center; height: 300px;
     display: flex; align-items: center; justify-content: center; position: relative;
 }
