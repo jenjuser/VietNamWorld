@@ -30,16 +30,18 @@
 		
 		<!-- Custom CSS -->
         <link rel="stylesheet" href="css/normalize.css">
-        <link rel="stylesheet" href="css/responsive.css">
         <link rel="stylesheet" href="style.css">
         <link rel="stylesheet" href="css/explore.css">
-        
+        <link rel="stylesheet" href="css/responsive.css">
     </head>
     <body>
+
+		<!-- Header Area -->
 		{% include header.html %}
+		<!-- End Header Area -->
 
         <!-- Page Header Banner -->
-        <div class="header-banner">
+        <div class="page-header-banner explore-header-banner">
             <h1>Khám phá VNW</h1>
         </div>
 
@@ -113,7 +115,9 @@
                 <div class="row justify-content-center">
                     <div class="col-lg-6 col-md-12 wow fadeInUp" data-wow-delay="0.2s">
                         <div class="char-card">
-                            <div class="char-icon"><i class="icofont-boy"></i></div>
+                            <div class="char-icon">
+                                <img src="img/char-main.png" alt="Nhân vật chính" class="img-fluid" onerror="this.src='https://via.placeholder.com/80?text=NV'">
+                            </div>
                             <div class="char-content">
                                 <span class="char-badge">Nhân vật chính</span>
                                 <p class="char-desc">Người tỉnh dậy trong bảo tàng, mất ký ức và phải đi qua nhiều vùng đất để tìm lại bản thân.</p>
@@ -122,7 +126,9 @@
                     </div>
                     <div class="col-lg-6 col-md-12 wow fadeInUp" data-wow-delay="0.3s">
                         <div class="char-card">
-                            <div class="char-icon"><i class="icofont-ghost"></i></div>
+                            <div class="char-icon">
+                                <img src="img/char-guide.png" alt="Thần Dẫn Lối" class="img-fluid" onerror="this.src='https://via.placeholder.com/80?text=Thần'">
+                            </div>
                             <div class="char-content">
                                 <span class="char-badge">Thần Dẫn Lối</span>
                                 <p class="char-desc">Linh thần trú ngụ trong bản đồ cổ, người trao la bàn và dẫn đường cho hành trình.</p>
@@ -131,7 +137,9 @@
                     </div>
                     <div class="col-lg-6 col-md-12 wow fadeInUp" data-wow-delay="0.4s">
                         <div class="char-card">
-                            <div class="char-icon"><i class="icofont-business-man"></i></div>
+                            <div class="char-icon">
+                                <img src="img/char-dad.png" alt="Ba" class="img-fluid" onerror="this.src='https://via.placeholder.com/80?text=Ba'">
+                            </div>
                             <div class="char-content">
                                 <span class="char-badge">Ba</span>
                                 <p class="char-desc">Tiến sĩ sử gia, người từng kể cho nhân vật nghe những câu chuyện phía sau di tích, hiện vật và lịch sử Việt Nam.</p>
@@ -140,7 +148,9 @@
                     </div>
                     <div class="col-lg-6 col-md-12 wow fadeInUp" data-wow-delay="0.5s">
                         <div class="char-card">
-                            <div class="char-icon"><i class="icofont-girl"></i></div>
+                            <div class="char-icon">
+                                <img src="img/char-mom.png" alt="Mẹ" class="img-fluid" onerror="this.src='https://via.placeholder.com/80?text=Mẹ'">
+                            </div>
                             <div class="char-content">
                                 <span class="char-badge">Mẹ</span>
                                 <p class="char-desc">Một đầu bếp, người giúp nhân vật hiểu rằng mỗi món ăn đều lưu giữ ký ức gia đình và bản sắc địa phương.</p>
@@ -149,7 +159,9 @@
                     </div>
                     <div class="col-lg-6 col-md-12 wow fadeInUp" data-wow-delay="0.6s">
                         <div class="char-card">
-                            <div class="char-icon"><i class="icofont-users"></i></div>
+                            <div class="char-icon">
+                                <img src="img/char-friend.png" alt="Bạn đồng hành" class="img-fluid" onerror="this.src='https://via.placeholder.com/80?text=Bạn'">
+                            </div>
                             <div class="char-content">
                                 <span class="char-badge">Bạn đồng hành</span>
                                 <p class="char-desc">Những người bạn xuất hiện tại từng tỉnh thành, hỗ trợ nhân vật trong mỗi chặng đường trước khi cậu tự mình bước tiếp.</p>
@@ -190,6 +202,7 @@
             </div>
         </section>
 
+		<!-- Footer Area -->
 		{% include footer.html %}
 		
 		<!-- jquery Min JS -->
