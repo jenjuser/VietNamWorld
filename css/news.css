@@ -1,9 +1,6 @@
 /*======================================
    VIETNAMWORLD - NEWS PAGE CSS
 ========================================*/
-.news-header-banner { 
-    background-image: url('../img/news-bg.jpg'); /* Có thể thay ảnh nền banner ở đây */
-}
 
 /* Sự kiện & Tin mới Section */
 .events-section { 

@@ -4,7 +4,6 @@
 
 /* Section 1: Banner */
 .collab-header-banner { 
-    background-image: url('../img/collab-bg.jpg'); /* Đổi ảnh nền phù hợp (bản đồ, điểm đánh dấu) */
     height: 450px; 
     text-align: center;
     display: flex;

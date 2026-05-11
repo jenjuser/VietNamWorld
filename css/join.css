@@ -3,14 +3,6 @@
 ========================================*/
 
 /* Section 1: Banner */
-.join-header-banner { 
-    background-image: url('../img/join-bg.jpg'); 
-    height: 450px; 
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
 .join-header-banner p {
     position: relative;
     z-index: 2;

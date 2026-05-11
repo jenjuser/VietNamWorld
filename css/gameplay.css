@@ -1,8 +1,6 @@
 /*======================================
    VIETNAMWORLD - GAMEPLAY PAGE CSS
 ========================================*/
-.gameplay-header-banner { background-image: url('../img/gameplay-bg.jpg'); /* Có thể đổi ảnh */ }
-
 /* Gameplay Flow Timeline */
 .timeline-section { background-color: #fdfaf6; padding: 100px 0; overflow: hidden; }
 .vnw-timeline { position: relative; max-width: 1000px; margin: 0 auto; }
