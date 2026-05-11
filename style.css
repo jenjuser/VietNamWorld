@@ -267,7 +267,7 @@ body {
    4. VIETNAMWORLD - EXPLORE PAGE CSS
 ========================================*/
 /* Explore Top Banner */
-.explore-header-banner {
+.header-banner {
     background-image: url('img/top_bg.jpg');
     background-size: cover;
     background-position: center;
@@ -277,13 +277,13 @@ body {
     justify-content: center;
     position: relative;
 }
-.explore-header-banner::before {
+.header-banner::before {
     content: "";
     position: absolute;
     top: 0; left: 0; right: 0; bottom: 0;
     background: rgba(0,0,0,0.4);
 }
-.explore-header-banner h1 {
+.header-banner h1 {
     position: relative;
     color: #fff;
     font-size: 42px;
