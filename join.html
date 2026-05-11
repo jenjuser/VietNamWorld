@@ -34,47 +34,7 @@
     </head>
     <body>
 	
-		<!-- Header Area -->
-		<header class="header" >
-			<div class="header-inner">
-				<div class="container">
-					<div class="inner">
-						<div class="row">
-							<div class="col-lg-3 col-md-3 col-12">
-								<div class="logo">
-									<a href="index.html"><img src="img/ava.jpg" alt="VNW Logo"></a>
-								</div>
-								<div class="mobile-nav"></div>
-							</div>
-							<div class="col-lg-7 col-md-9 col-12">
-								<div class="main-menu">
-									<nav class="navigation">
-										<ul class="nav menu">
-											<li><a href="index.html">Trang chủ</a></li>
-											<li><a href="explore.html">Khám phá</a></li>
-											<li><a href="gameplay.html">Cách chơi</a></li>
-											<li><a href="news.html">Tin tức & Sự kiện<i class="icofont-rounded-down"></i></a>
-												<ul class="dropdown">
-													<li><a href="news.html">Sự kiện mới</a></li>
-												</ul>
-											</li>
-											<li class="active"><a href="join.html">Tham gia</a></li>
-											<li><a href="#">Hợp tác</a></li>
-										</ul>
-									</nav>
-								</div>
-							</div>
-							<div class="col-lg-2 col-12">
-								<div class="get-quote">
-									<a href="#packages" class="btn">Chơi ngay!</a>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</header>
-		<!-- End Header Area -->
+		{% include header.html %}
 
         <!-- Section 1: Banner đầu trang -->
         <div class="page-header-banner join-header-banner">
@@ -329,4 +289,65 @@
                                 <i class="icofont-pay"></i>
                                 <div>
                                     <h5>Ví điện tử</h5>
-                                    <p>Dùng cho voucher, merchandise hoặc sự kiện O2
+                                    <p>Dùng cho voucher, merchandise hoặc sự kiện O2O.</p>
+                                </div>
+                            </li>
+                            <li>
+                                <i class="icofont-bank"></i>
+                                <div>
+                                    <h5>Thẻ ngân hàng</h5>
+                                    <p>Phù hợp với các giao dịch giá trị cao hơn.</p>
+                                </div>
+                            </li>
+                            <li>
+                                <i class="icofont-gift"></i>
+                                <div>
+                                    <h5>Gift Code</h5>
+                                    <p>Dùng cho Beta reward, referral, campus event hoặc mini game.</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 7: Tham gia cộng đồng -->
+        <section class="community-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="community-content wow zoomIn">
+                            <h2>Tham gia cộng đồng VNW</h2>
+                            <p style="font-size: 16px; max-width: 800px; margin: 0 auto; line-height: 1.8;">
+                                Tham gia cộng đồng VNW để cập nhật tin mới, nhận gift code, theo dõi quá trình phát triển game, tham gia mini game và chia sẻ hành trình khám phá Việt Nam cùng những người chơi khác.
+                            </p>
+                            <div class="community-channels">
+                                <div class="channel-box">
+                                    <i class="fa fa-facebook-official"></i>
+                                    <h4>Facebook Fanpage</h4>
+                                    <p>Cập nhật thông tin, sự kiện, trailer và bài đăng cộng đồng.</p>
+                                </div>
+                                <div class="channel-box">
+                                    <i class="fa fa-music"></i>
+                                    <h4>TikTok</h4>
+                                    <p>Teaser AR, clip gameplay, thử thách văn hóa và video ngắn.</p>
+                                </div>
+                            </div>
+                            <a href="https://www.facebook.com/profile.php?id=61589143787156" target="_blank" class="vnw-btn" style="background: #fff; color: #bd3015;">Tham gia cộng đồng VNW ngay</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+		{% include footer.html %}
+		
+		<!-- jquery Min JS -->
+        <script src="js/jquery.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/slicknav.min.js"></script>
+		<script src="js/wow.min.js"></script>
+		<script src="js/main.js"></script>
+    </body>
+</html>

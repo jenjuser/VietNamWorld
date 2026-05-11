@@ -1,3 +1,5 @@
+---
+---
 <!doctype html>
 <html class="no-js" lang="zxx">
     <head>
@@ -32,56 +34,7 @@
     </head>
     <body>
 	
-		<!-- Preloader -->
-        <div class="preloader">
-            <div class="loader">
-                <div class="loader-outter"></div>
-                <div class="loader-inner"></div>
-            </div>
-        </div>
-        <!-- End Preloader -->
-	
-		<!-- Header Area -->
-		<header class="header" >
-			<div class="header-inner">
-				<div class="container">
-					<div class="inner">
-						<div class="row">
-							<div class="col-lg-3 col-md-3 col-12">
-								<div class="logo">
-									<a href="index.html"><img src="img/ava.jpg" alt="VNW Logo"></a>
-								</div>
-								<div class="mobile-nav"></div>
-							</div>
-							<div class="col-lg-7 col-md-9 col-12">
-								<div class="main-menu">
-									<nav class="navigation">
-										<ul class="nav menu">
-											<li><a href="index.html">Trang chủ</a></li>
-											<li><a href="explore.html">Khám phá</a></li>
-											<li class="active"><a href="gameplay.html">Cách chơi</a></li>
-											<li><a href="#">Tin tức & Sự kiện<i class="icofont-rounded-down"></i></a>
-												<ul class="dropdown">
-													<li><a href="#">Sự kiện mới</a></li>
-												</ul>
-											</li>
-											<li><a href="#">Tham gia</a></li>
-											<li><a href="#">Hợp tác</a></li>
-										</ul>
-									</nav>
-								</div>
-							</div>
-							<div class="col-lg-2 col-12">
-								<div class="get-quote">
-									<a href="#" class="btn">Chơi ngay!</a>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</header>
-		<!-- End Header Area -->
+		{% include header.html %}
 
         <!-- Page Header Banner -->
         <div class="page-header-banner gameplay-header-banner">
@@ -200,23 +153,8 @@
             </div>
         </section>
 
-		<!-- Footer Area -->
-		<footer class="vnw-footer">
-			<div class="container">
-				<div class="row">
-					<div class="col-12 text-center">
-						<h4 class="contact-title">THÔNG TIN LIÊN HỆ</h4>
-						<div class="contact-info">
-							<span><strong>Email:</strong> contact@vietnamworld.vn</span>
-							<span class="divider">|</span>
-							<span><strong>SĐT:</strong> 0909486575</span>
-							<span class="divider">|</span>
-							<span><strong>Fanpage:</strong> <a href="https://www.facebook.com/profile.php?id=61589143787156" target="_blank">VietnamWorld</a></span>
-						</div>
-					</div>
-				</div>
-			</div>
-		</footer>
+		{% include footer.html %}
+
 		
 		<!-- jquery Min JS -->
         <script src="js/jquery.min.js"></script>
