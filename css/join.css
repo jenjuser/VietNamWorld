@@ -1,0 +1,126 @@
+/*======================================
+   VIETNAMWORLD - JOIN PAGE CSS
+========================================*/
+
+/* Section 1: Banner */
+.join-header-banner { 
+    background-image: url('../img/join-bg.jpg'); 
+    height: 450px; 
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.join-header-banner p {
+    position: relative;
+    z-index: 2;
+    color: #fff;
+    font-size: 18px;
+    max-width: 800px;
+    margin: 20px auto 30px;
+    line-height: 1.6;
+}
+.join-banner-actions {
+    position: relative;
+    z-index: 2;
+}
+
+/* Section 2: Registration Form */
+.beta-form-section { background-color: #f9f9f9; padding: 80px 0; }
+.beta-form-wrapper {
+    background: #fff;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+    border-top: 5px solid #bd3015;
+}
+.form-group { margin-bottom: 20px; }
+.form-group label { font-weight: 600; color: #333; margin-bottom: 8px; display: block; }
+.form-control {
+    width: 100%; height: 50px; border: 1px solid #ddd; border-radius: 8px;
+    padding: 10px 20px; font-size: 15px; transition: all 0.3s ease;
+}
+.form-control:focus { border-color: #bd3015; box-shadow: 0 0 8px rgba(189,48,21,0.1); outline: none; }
+.success-msg { display: none; background: #d4edda; color: #155724; padding: 15px; border-radius: 8px; margin-top: 20px; font-weight: 500; }
+
+/* Section 3: Rewards */
+.rewards-section { padding: 80px 0; background: #fffdf9; }
+.reward-card {
+    text-align: center; padding: 30px 20px; background: #fff;
+    border-radius: 12px; box-shadow: 0 5px 15px rgba(0,0,0,0.04);
+    border: 1px solid #f0e6d6; height: 100%; transition: transform 0.3s ease;
+}
+.reward-card:hover { transform: translateY(-5px); border-color: #d1ad65; }
+.reward-icon {
+    width: 70px; height: 70px; line-height: 70px; background: #fcf4e3;
+    color: #bd3015; font-size: 30px; border-radius: 50%; margin: 0 auto 20px;
+}
+.reward-card h4 { font-size: 18px; font-weight: 700; color: #bd3015; margin-bottom: 15px; }
+.reward-card p { font-size: 14px; color: #666; margin: 0; }
+
+/* Section 4: Pricing Packages */
+.pricing-section { padding: 80px 0; background: #f5f4f0; }
+.pricing-card {
+    background: #fff; padding: 40px 30px; border-radius: 15px;
+    text-align: center; position: relative; margin-bottom: 30px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.05); border: 2px solid transparent;
+    transition: all 0.3s ease; height: 100%;
+}
+.pricing-card:hover { transform: translateY(-10px); box-shadow: 0 15px 30px rgba(0,0,0,0.1); }
+.pricing-card.recommended { border-color: #bd3015; transform: scale(1.05); z-index: 1; }
+.pricing-card.recommended:hover { transform: scale(1.05) translateY(-10px); }
+.pricing-badge {
+    position: absolute; top: -15px; left: 50%; transform: translateX(-50%);
+    background: #bd3015; color: #fff; padding: 5px 20px; border-radius: 20px;
+    font-size: 13px; font-weight: 700; text-transform: uppercase; letter-spacing: 1px;
+}
+.pricing-title { font-size: 22px; font-weight: 700; color: #2C2D3F; margin-bottom: 15px; }
+.pricing-price { font-size: 36px; font-weight: 700; color: #bd3015; margin-bottom: 20px; }
+.pricing-price span { font-size: 16px; color: #888; font-weight: 400; }
+.pricing-desc { font-size: 14px; color: #666; margin-bottom: 25px; min-height: 40px; }
+.pricing-features { list-style: none; padding: 0; margin: 0 0 30px; text-align: left; }
+.pricing-features li { padding: 10px 0; border-bottom: 1px dashed #eee; font-size: 14px; color: #555; position: relative; padding-left: 25px; }
+.pricing-features li::before { content: "\f00c"; font-family: "FontAwesome"; position: absolute; left: 0; color: #d1ad65; }
+
+/* Gacha Packages */
+.gacha-card { background: #fffdf9; border: 1px dashed #d1ad65; padding: 30px; border-radius: 15px; margin-bottom: 30px; text-align: center; }
+.gacha-card h4 { color: #bd3015; font-size: 20px; font-weight: 700; }
+.gacha-card .price { font-size: 24px; font-weight: 700; color: #2C2D3F; margin: 10px 0; }
+.gacha-features li { list-style: none; font-size: 14px; color: #555; margin-bottom: 8px; }
+
+/* Section 5 & 6: Download & Payment */
+.info-section { padding: 80px 0; background: #fff; }
+.app-buttons .btn-app {
+    display: inline-flex; align-items: center; background: #111; color: #fff;
+    padding: 10px 25px; border-radius: 8px; margin-right: 15px; transition: all 0.3s ease;
+    text-align: left; margin-bottom: 15px;
+}
+.app-buttons .btn-app:hover { background: #bd3015; color: #fff; }
+.app-buttons .btn-app i { font-size: 30px; margin-right: 15px; }
+.app-buttons .btn-app span { display: block; font-size: 12px; line-height: 1; }
+.app-buttons .btn-app strong { font-size: 18px; font-weight: 600; display: block; }
+
+.payment-list { list-style: none; padding: 0; margin: 0; }
+.payment-list li { display: flex; align-items: flex-start; margin-bottom: 20px; }
+.payment-list li i { font-size: 24px; color: #d1ad65; margin-right: 15px; margin-top: 3px; }
+.payment-list li h5 { font-size: 16px; font-weight: 600; color: #333; margin-bottom: 5px; }
+.payment-list li p { font-size: 14px; color: #666; margin: 0; }
+
+/* Section 7: Community */
+.community-section {
+    background-image: url('../img/community-bg.jpg'); background-size: cover; background-position: center;
+    padding: 100px 0; position: relative; text-align: center; color: #fff;
+}
+.community-section::before { content: ""; position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: rgba(189, 48, 21, 0.85); }
+.community-content { position: relative; z-index: 2; }
+.community-content h2 { color: #fff; font-size: 36px; font-weight: 700; margin-bottom: 20px; }
+.community-channels { display: flex; justify-content: center; gap: 30px; margin: 30px 0; flex-wrap: wrap; }
+.channel-box { background: rgba(255,255,255,0.1); padding: 20px 30px; border-radius: 10px; border: 1px solid rgba(255,255,255,0.2); }
+.channel-box i { font-size: 36px; color: #d1ad65; margin-bottom: 10px; }
+.channel-box h4 { color: #fff; font-size: 18px; font-weight: 600; margin-bottom: 5px; }
+.channel-box p { font-size: 13px; color: #eee; margin: 0; max-width: 200px; }
+
+@media (max-width: 991px) {
+    .pricing-card.recommended { transform: scale(1); }
+    .pricing-card.recommended:hover { transform: translateY(-10px); }
+}

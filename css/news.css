@@ -1,0 +1,101 @@
+/*======================================
+   VIETNAMWORLD - NEWS PAGE CSS
+========================================*/
+.news-header-banner { 
+    background-image: url('../img/news-bg.jpg'); /* Có thể thay ảnh nền banner ở đây */
+}
+
+/* Sự kiện & Tin mới Section */
+.events-section { 
+    background-color: #f5f5f5; /* Nền xám nhạt làm nổi bật card */
+    padding: 80px 0; 
+}
+.events-intro { 
+    font-size: 18px; 
+    color: #2C2D3F; 
+    margin-bottom: 50px; 
+    line-height: 1.8; 
+    text-align: center; 
+    max-width: 900px; 
+    margin-left: auto; 
+    margin-right: auto; 
+}
+
+/* Event Card Design based on mock-up */
+.event-card {
+    background: #fff;
+    border: 2px solid #e07765; /* Viền cam/đỏ mỏng mặc định */
+    border-radius: 12px;
+    overflow: hidden;
+    margin-bottom: 30px;
+    transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    height: calc(100% - 30px);
+}
+.event-card:hover {
+    border-color: #8c52ff; /* Đổi viền sang màu tím khi hover */
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.08);
+}
+.event-img {
+    width: 100%;
+    height: 240px;
+    object-fit: cover;
+    border-bottom: 1px solid #f0f0f0;
+}
+.event-body {
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-grow: 1;
+}
+.event-text {
+    font-size: 16px;
+    color: #bd3015; /* Chữ đỏ */
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+.event-title {
+    font-size: 22px;
+    font-weight: 700;
+    color: #bd3015; /* Tiêu đề đỏ đậm */
+    text-align: right;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+/* Nút xem tất cả */
+.view-all-link {
+    display: inline-block;
+    margin-top: 10px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #bd3015;
+    text-decoration: underline;
+    transition: color 0.3s ease;
+}
+.view-all-link:hover {
+    color: #af231c;
+}
+
+/* CTA Section (Được khai báo lại để trang news chạy độc lập nếu style.css chưa có) */
+.cta-section { 
+    background-image: url('../img/banhxeobg.png'); 
+    background-size: cover; 
+    background-position: center; 
+    position: relative; 
+    padding: 100px 0; 
+    text-align: center; 
+}
+.cta-section::before { 
+    content: ""; 
+    position: absolute; 
+    top: 0; left: 0; right: 0; bottom: 0; 
+    background: rgba(0,0,0,0.6); 
+}
+.cta-content { position: relative; z-index: 2; }
+.cta-content h2 { color: #d1ad65; font-size: 36px; font-weight: 700; margin-bottom: 20px; }
+.cta-content p { color: #fff; font-size: 18px; max-width: 700px; margin: 0 auto 30px; line-height: 1.6; }
+.cta-content .vnw-btn { margin: 0 10px; }
