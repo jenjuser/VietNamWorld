@@ -105,6 +105,7 @@ body {
     margin: 0 0 20 0;
 
     white-space: nowrap;
+    white-space: normal;
     
     line-height: 1.4;
     /* text-align: left; */
@@ -112,6 +113,13 @@ body {
     word-break: normal;
     white-space: normal;
 }
+
+@media (max-width: 991px) {
+    .vnw-section .section-title h2 {
+        /* white-space: normal; */
+    }
+}
+
 .section-title.text-left .line {
     display: block;
     height: 3px;

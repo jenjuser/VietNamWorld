@@ -2,6 +2,15 @@
    VIETNAMWORLD - JOIN PAGE CSS
 ========================================*/
 
+.vnw-section .section-title h2 {
+    white-space: nowrap;
+}
+@media (max-width: 991px) {
+    .vnw-section .section-title h2 {
+        white-space: normal;
+    }
+}
+
 /* Section 1: Banner */
 .join-header-banner p {
     position: relative;
