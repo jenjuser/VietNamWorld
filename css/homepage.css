@@ -9,7 +9,7 @@
 @media only screen and (max-width: 768px) { .static-banner { height: 400px; } }
 
 .why-choose { background: #fff; }
-.why-choose .choose-left p { margin-bottom: 20px; }
+.why-choose .choose-left p { margin-bottom: 32px; }
 .why-choose .choose-right img { width: 100%; border-radius: 8px;}
 
 .call-action { background-image: url('../img/banhxeobg.png'); background-size: cover; background-position: center; position: relative; }

@@ -1,35 +1,114 @@
 /*======================================
    VIETNAMWORLD - EXPLORE PAGE CSS
 ========================================*/
-.characters-section { background-color: #f5f4f0; }
+
+/* Fix title collapse bug (Ép tiêu đề nằm trên 1 dòng) */
+.vnw-section .section-title h2 {
+    white-space: nowrap;
+}
+@media (max-width: 991px) {
+    .vnw-section .section-title h2 {
+        /* white-space: normal; */
+    }
+}
+
+/* Characters Section */
+.characters-section { 
+    background-color: #f5f4f0; 
+}
 .char-card {
-    background: #fffdf9; border: 2px solid #bd3015; border-radius: 15px;
-    padding: 20px; display: flex; align-items: center; margin-bottom: 30px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.05); transition: transform 0.3s ease; height: 100%;
+    background: #fffdf9; 
+    border: 2px solid #bd3015; 
+    border-radius: 15px;
+    padding: 35px 25px; /* Phóng to khoảng cách bên trong card */
+    display: flex; 
+    align-items: center; 
+    margin-bottom: 30px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05); 
+    transition: transform 0.3s ease; 
+    height: 100%;
 }
-.char-card:hover { transform: translateY(-5px); }
-.char-icon { flex: 0 0 80px; text-align: center; margin-right: 20px; }
-.char-icon i { font-size: 60px; color: #bd3015; }
-.char-content { flex: 1; text-align: center; }
+.char-card:hover { 
+    transform: translateY(-5px); 
+}
+.char-icon { 
+    flex: 0 0 120px; /* Phóng to vùng chứa icon/ảnh */
+    text-align: center; 
+    margin-right: 40px; 
+}
+.char-icon img { 
+    max-width: 100%; 
+    height: auto; 
+}
+.char-content { 
+    flex: 1; 
+    text-align: left; 
+}
 .char-badge {
-    display: inline-block; background-color: #d1ad65; color: #af231c;
-    font-weight: 700; font-size: 15px; padding: 6px 30px; border-radius: 25px; margin-bottom: 12px;
+    display: inline-block; 
+    background-color: #d1ad65; 
+    color: #af231c;
+    font-weight: 700; 
+    font-size: 15px; 
+    padding: 6px 30px; 
+    border-radius: 25px; 
+    margin-bottom: 12px;
 }
-.char-desc { font-size: 15px; color: #bd3015; line-height: 1.6; margin: 0; }
+.char-desc { 
+    font-size: 16px; /* Tăng cỡ chữ mô tả */
+    color: #bd3015; 
+    line-height: 1.6; 
+    margin: 0; 
+}
 
-.artifacts-section { background-color: #f5f4f0; }
-.artifact-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; margin-top: 40px; }
+/* Artifacts Section */
+.artifacts-section { 
+    background-color: #f5f4f0; 
+}
+.artifact-grid { 
+    display: grid; 
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 20px; 
+    margin-top: 40px; 
+}
 .artifact-box {
-    background-color: #a8462d; border-radius: 20px; aspect-ratio: 1 / 1;
-    display: flex; align-items: center; justify-content: center; color: #fff;
-    font-weight: 600; font-size: 18px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-    transition: transform 0.3s ease, background-color 0.3s ease; cursor: pointer;
+    background-color: #a8462d; 
+    border-radius: 20px; 
+    aspect-ratio: 1 / 1;
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    color: #fff;
+    font-weight: 600; 
+    font-size: 18px; 
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, background-color 0.3s ease; 
+    cursor: pointer;
 }
-.artifact-box:hover { transform: scale(1.05); background-color: #c45235; }
+.artifact-box:hover { 
+    transform: scale(1.05); 
+    background-color: #c45235; 
+}
 
-@media (max-width: 991px) { .artifact-grid { grid-template-columns: repeat(3, 1fr); } }
+@media (max-width: 991px) { 
+    .artifact-grid { 
+        grid-template-columns: repeat(3, 1fr); 
+    } 
+}
 @media (max-width: 768px) {
-    .artifact-grid { grid-template-columns: repeat(2, 1fr); }
-    .char-card { flex-direction: column; text-align: center; }
-    .char-icon { margin-right: 0; margin-bottom: 15px; }
+    .artifact-grid { 
+        grid-template-columns: repeat(2, 1fr); 
+    }
+    .char-card { 
+        flex-direction: column; 
+        text-align: center; 
+        padding: 25px 15px;
+    }
+    .char-icon { 
+        margin-right: 0; 
+        margin-bottom: 20px; 
+    }
+    .char-content {
+        text-align: center;
+    }
 }
