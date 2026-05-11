@@ -92,7 +92,7 @@ body {
     max-width: none; /* Bỏ mọi giới hạn chiều rộng */
     margin: 0 0 30px 0; /* Reset lề về 0 để không bị đẩy sang phải */
     padding: 0;
-    text-align: left;
+    /* text-align: left; */
     position: relative;
     clear: both;
 }
